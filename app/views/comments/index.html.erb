@@ -1,0 +1,8 @@
+<h1>投稿一覧</h1>
+<hr>
+<% @comments.each do |c| %>
+  <p><a href="/comments/<%= c.id %>"><%= c.id %>:<%= c.name %></a></p>
+  <p><%= c.content %></p>
+  <hr>
+<% end %>
+<a href="/comments/new" class="btn btn-primary">新しく投稿する</a>

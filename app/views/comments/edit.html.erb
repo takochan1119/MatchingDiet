@@ -1,0 +1,9 @@
+<h1>投稿を編集する</h1>
+<hr>
+<%= form_for @comment do |c| %>
+  <p>内容</p>
+  <%= c.text_area :content %>
+  <hr>
+  <%= c.submit "変更する" %>
+<% end %>
+<a href="/comments/<%= @comment.id %>">投稿に戻る</a>
