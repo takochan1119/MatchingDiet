@@ -15,4 +15,7 @@ devise_for :users, controllers: {
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :posts , :only => [:show, :index, :new, :create, :edit, :update, :destroy]
   resources :comments , :only => [:show, :index, :new, :create, :edit, :update, :destroy]
+  
+  resources :users, :only => [:show, :index, :edit, :update]
+  resources :teachers, :only => [:show, :index, :edit, :update]
 end

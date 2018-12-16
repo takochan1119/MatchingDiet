@@ -1,0 +1,8 @@
+<h1>コンサル情報を変更しました。</h1>
+<hr>
+<p>名前：<%= @teacher.family_name %><%= @teacher.first_name %>さん</p>
+<p>自己紹介：<%= @teacher.self_introduction %></p>
+<hr>
+<p><a href="/teachers/<%= @teacher.id %>" class="btn btn-primary">ユーザー情報に戻る</a></p>
+<p><a href="/teachers/<%= @teacher.id %>/edit" class="btn btn-success">ユーザー情報の編集に戻る</a></p>
+<p><a href="/comments" class="btn btn-info">トップに戻る</a></p>

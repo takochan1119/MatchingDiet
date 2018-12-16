@@ -1,0 +1,7 @@
+<h1>コンサル一覧</h1>
+<hr>
+<% @teachers.each do |t| %>
+  <p><a href="/teachers/<%= t.id %>"><%= t.family_name %><%= t.first_name %>さん</a></p>
+  <hr>
+<% end %>
+<a href="/comments" class="btn btn-info">トップに戻る</a>
